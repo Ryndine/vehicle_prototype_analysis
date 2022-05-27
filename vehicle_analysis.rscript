@@ -12,7 +12,6 @@ car_lm <- lm(mpg ~ v_length + v_weight + spoiler_angle + ground_clearance + AWD,
 summary(car_lm)
 
 
-
 ### Suspension coil summary analysis
 
 # CSV
