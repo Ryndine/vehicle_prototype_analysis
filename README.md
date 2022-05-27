@@ -1,4 +1,4 @@
-# Vehicle Pototype Analysis
+# Vehicle Prototype Analysis
 
 ## Objective: 
 Run statistical analysis on a vehicle dataset.
