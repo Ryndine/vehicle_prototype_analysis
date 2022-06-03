@@ -16,3 +16,6 @@ It seems upon analysis that Lot 1 and Lot 2 have the same calculated mean and me
 
 **T-tests on suspension coils**  
 Upon analyzing each one-sample t-test we can see that Lot 1 and Lot 2 PSI values are similar to the population mean. Lot 3 p-value is below the significance level, with a p-value of 0.041. This means our Lot 3 mean PSI is different than the population mean.
+
+**RStudio Cloud Preview**  
+![rstudio](https://github.com/Ryndine/vehicle_prototype_analysis/blob/main/Resources/rstudio_cloud.jpg)
