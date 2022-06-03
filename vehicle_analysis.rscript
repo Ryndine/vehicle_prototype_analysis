@@ -3,23 +3,22 @@ library(tidyverse)
 ### Car analysis
 
 # CSV
-car_data <- read.csv("mechacar_mpg.csv",stringsAsFactors = F,check.names = F)
+car_data <- read.csv("Resources/mechacar_mpg.csv",stringsAsFactors = F,check.names = F)
 
 # Linear regression module 
-car_lm <- lm(mpg ~ v_length + v_weight + spoiler_angle + ground_clearance + AWD,data=car_data)
+car_linear_module <- lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=car_data)
 
 # P-value and r-squared
-summary(car_lm)
+summary(car_linear_module)
 
 
 ### Suspension coil summary analysis
 
 # CSV
-suspension_data <- read.csv("suspension_coil.csv",stringsAsFactors = F, check.names = F)
+suspension_data <- read.csv("Resources/suspension_coil.csv",stringsAsFactors = F, check.names = F)
 
 # Total summary
-total_summary <- suspension_data %>% 
-  summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
+total_summary <- suspension_data %>% summarize(Mean=mean(PSI),Median=median(PSI),Variance=var(PSI),SD=sd(PSI))
   
   
 # Summary by lot
